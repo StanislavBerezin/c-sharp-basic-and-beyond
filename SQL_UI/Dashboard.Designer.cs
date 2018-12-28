@@ -32,6 +32,15 @@
             this.LastNameText = new System.Windows.Forms.TextBox();
             this.LastNameLabel = new System.Windows.Forms.Label();
             this.SearchButton = new System.Windows.Forms.Button();
+            this.firstNameInsLabel = new System.Windows.Forms.Label();
+            this.firstNameInsText = new System.Windows.Forms.TextBox();
+            this.lastNameInsLabel = new System.Windows.Forms.Label();
+            this.lastNameInsText = new System.Windows.Forms.TextBox();
+            this.emailAddressInsLabel = new System.Windows.Forms.Label();
+            this.emailAddressInsText = new System.Windows.Forms.TextBox();
+            this.phoneNumberInsLabel = new System.Windows.Forms.Label();
+            this.phoneNumberInsText = new System.Windows.Forms.TextBox();
+            this.insertRecordButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PeopleFoundListBox
@@ -72,11 +81,95 @@
             this.SearchButton.UseVisualStyleBackColor = true;
             this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
+            // firstNameInsLabel
+            // 
+            this.firstNameInsLabel.AutoSize = true;
+            this.firstNameInsLabel.Location = new System.Drawing.Point(338, 93);
+            this.firstNameInsLabel.Name = "firstNameInsLabel";
+            this.firstNameInsLabel.Size = new System.Drawing.Size(101, 24);
+            this.firstNameInsLabel.TabIndex = 5;
+            this.firstNameInsLabel.Text = "First Name";
+            // 
+            // firstNameInsText
+            // 
+            this.firstNameInsText.Location = new System.Drawing.Point(454, 91);
+            this.firstNameInsText.Name = "firstNameInsText";
+            this.firstNameInsText.Size = new System.Drawing.Size(100, 29);
+            this.firstNameInsText.TabIndex = 4;
+            // 
+            // lastNameInsLabel
+            // 
+            this.lastNameInsLabel.AutoSize = true;
+            this.lastNameInsLabel.Location = new System.Drawing.Point(338, 128);
+            this.lastNameInsLabel.Name = "lastNameInsLabel";
+            this.lastNameInsLabel.Size = new System.Drawing.Size(99, 24);
+            this.lastNameInsLabel.TabIndex = 7;
+            this.lastNameInsLabel.Text = "Last Name";
+            this.lastNameInsLabel.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // lastNameInsText
+            // 
+            this.lastNameInsText.Location = new System.Drawing.Point(454, 126);
+            this.lastNameInsText.Name = "lastNameInsText";
+            this.lastNameInsText.Size = new System.Drawing.Size(100, 29);
+            this.lastNameInsText.TabIndex = 6;
+            // 
+            // emailAddressInsLabel
+            // 
+            this.emailAddressInsLabel.AutoSize = true;
+            this.emailAddressInsLabel.Location = new System.Drawing.Point(311, 164);
+            this.emailAddressInsLabel.Name = "emailAddressInsLabel";
+            this.emailAddressInsLabel.Size = new System.Drawing.Size(129, 24);
+            this.emailAddressInsLabel.TabIndex = 9;
+            this.emailAddressInsLabel.Text = "Email address";
+            // 
+            // emailAddressInsText
+            // 
+            this.emailAddressInsText.Location = new System.Drawing.Point(454, 161);
+            this.emailAddressInsText.Name = "emailAddressInsText";
+            this.emailAddressInsText.Size = new System.Drawing.Size(100, 29);
+            this.emailAddressInsText.TabIndex = 8;
+            // 
+            // phoneNumberInsLabel
+            // 
+            this.phoneNumberInsLabel.AutoSize = true;
+            this.phoneNumberInsLabel.Location = new System.Drawing.Point(311, 196);
+            this.phoneNumberInsLabel.Name = "phoneNumberInsLabel";
+            this.phoneNumberInsLabel.Size = new System.Drawing.Size(137, 24);
+            this.phoneNumberInsLabel.TabIndex = 11;
+            this.phoneNumberInsLabel.Text = "Phone number";
+            // 
+            // phoneNumberInsText
+            // 
+            this.phoneNumberInsText.Location = new System.Drawing.Point(454, 196);
+            this.phoneNumberInsText.Name = "phoneNumberInsText";
+            this.phoneNumberInsText.Size = new System.Drawing.Size(100, 29);
+            this.phoneNumberInsText.TabIndex = 10;
+            // 
+            // insertRecordButton
+            // 
+            this.insertRecordButton.Location = new System.Drawing.Point(417, 252);
+            this.insertRecordButton.Name = "insertRecordButton";
+            this.insertRecordButton.Size = new System.Drawing.Size(101, 35);
+            this.insertRecordButton.TabIndex = 12;
+            this.insertRecordButton.Text = "Insert";
+            this.insertRecordButton.UseVisualStyleBackColor = true;
+            this.insertRecordButton.Click += new System.EventHandler(this.insertRecordButton_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(612, 412);
+            this.Controls.Add(this.insertRecordButton);
+            this.Controls.Add(this.phoneNumberInsLabel);
+            this.Controls.Add(this.phoneNumberInsText);
+            this.Controls.Add(this.emailAddressInsLabel);
+            this.Controls.Add(this.emailAddressInsText);
+            this.Controls.Add(this.lastNameInsLabel);
+            this.Controls.Add(this.lastNameInsText);
+            this.Controls.Add(this.firstNameInsLabel);
+            this.Controls.Add(this.firstNameInsText);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.LastNameLabel);
             this.Controls.Add(this.LastNameText);
@@ -97,6 +190,15 @@
         private System.Windows.Forms.TextBox LastNameText;
         private System.Windows.Forms.Label LastNameLabel;
         private System.Windows.Forms.Button SearchButton;
+        private System.Windows.Forms.Label firstNameInsLabel;
+        private System.Windows.Forms.TextBox firstNameInsText;
+        private System.Windows.Forms.Label lastNameInsLabel;
+        private System.Windows.Forms.TextBox lastNameInsText;
+        private System.Windows.Forms.Label emailAddressInsLabel;
+        private System.Windows.Forms.TextBox emailAddressInsText;
+        private System.Windows.Forms.Label phoneNumberInsLabel;
+        private System.Windows.Forms.TextBox phoneNumberInsText;
+        private System.Windows.Forms.Button insertRecordButton;
     }
 }
 
