@@ -15,7 +15,12 @@ namespace SQL_UI
             //helper is used here as well, we call Helper.CnnVall and we passing the name of DB we require
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("SampleDB")))
             {
-                return connection.Query<Person>($"select * from People where LastName ='{ lastName }'").ToList();
+                //raw way of calling sql database, but can be tampered with sql injections
+                //return connection.Query<Person>($"select * from People where LastName ='{ lastName }'").ToList();
+
+                //we need to have alter in DB itself, where we define this search and here simply call it
+                //then we create a dynamic class with LastName which matches @LastName with prop lastName
+                return connection.Query<Person>("dbo.Person.GetByLastName @LastName", new { LastName = lastName }).ToList();
             }
         }
     }
